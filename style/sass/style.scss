@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600;700&display=swap');
+
+$font-standard: ;
+$coul-principale: #1079ad;
+$coul-fond: #d4dce8;
+$coul-foncee: #003366;
+$coul-accent: #8f2102;
+$coul-neutre: #feffff;
+$coul-txt: #000206;
+$btn-pad-std: 1em 2em;
+$btn-border-radius: 1em;
+
+/* Composantes principales */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $coul-fond;
+	color: $coul-txt;
+	line-height: 1.4;
+    font-family: $font-stack;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+header{
+	background-color: $neutral-color;
+}
+
+footer{
+  background-color: $accent-color;
+  margin-top: auto;
+  padding: 1em;
+}
+
+.header-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+
+.footer-content__message{
+  text-align: center;
+  color: $accent-color-2;
+}
+
+.logo{
+	width: 70%;
+}
