@@ -1,4 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+/* Composantes principales */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #00203d;
+  line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #7d8a99;
+}
+
+footer {
+  background-color: #00203d;
+  color: #ffffff;
+  margin-top: auto;
+  padding: 1em;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content__message {
+  text-align: center;
+}
+
+.logo {
+  width: 30%;
+}
+.logo--small {
+  width: 10%;
+}
+
+.nav-list {
+  list-style: none;
+}
+.nav-list__list-item {
+  display: inline-block;
+  margin-left: 0.8em;
+}
+.nav-list__link {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 0.5em;
+  color: #f5017c;
+}
+.nav-list__link--actuel-header {
+  border-bottom: 0.2em solid #f5017c;
+}
+.nav-list__link--actuel-footer {
+  border-bottom: 0.2em solid #ffffff;
+}
+.nav-list__link:hover {
+  background-color: #ffffff;
+}
+.nav-list--small {
+  font-size: 0.8em;
+}
+
+.section {
+  margin: 2em 0;
+}
+.section h2 {
+  text-transform: uppercase;
+}
+.section p a {
+  color: #f5017c;
+}
+.section__btn {
+  background-color: #ffffff;
+  color: #f5017c;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border: solid 0.1em #f5017c;
+}
+.section__btn:hover {
+  background-color: #f5017c;
+  color: #ffffff;
+}
+.section__btn--accent {
+  background-color: #f5017c;
+  color: #ffffff;
+}
+.section__btn--accent:hover {
+  background-color: #fea2b1;
+  color: #f5017c;
 }/*# sourceMappingURL=style.css.map */
