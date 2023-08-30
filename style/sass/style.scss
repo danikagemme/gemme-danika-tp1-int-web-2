@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-$padding-btn: 0.5em 1em;
-$border-radius-btn: 0.5em; 
+$padding-btn: 1em 1em;
+$border-radius-btn: 2em;
 $font-standard: 'Open Sans', sans-serif;
 $font-titres: 'Lato', sans-serif;
 $coul-principale: #ffffff;
@@ -32,11 +32,11 @@ body {
 }
 
 header{
-	background-color: $coul-neutre-pale;
+	background-color: $coul-secondaire;
 }
 
 footer{
-  background-color: $coul-neutre-foncee;
+  background-color: $coul-neutre-pale;
   color: $coul-principale;
   margin-top: auto;
   padding: 1em;
@@ -59,10 +59,14 @@ footer{
 }
 
 .logo{
-	width: 30%;
+	width: 100%;
 
   &--small{
-    width: 10%;
+    width: 50%;
+  }
+
+  &--centrer{
+    align-items: center;
   }
 }
 
@@ -80,19 +84,22 @@ footer{
     padding: $padding-btn;
     text-decoration: none;
     border-radius: $border-radius-btn;
-    color: $coul-accent;
+    color: $coul-principale;
+    font-weight: 600;
 
     &--actuel-header{
-      border-bottom: 0.2em solid $coul-accent;
+      border-right: 0.5em solid $coul-accent;
+      border-left: 0.5em solid $coul-accent;
     }
 
     &--actuel-footer{
-      border-bottom: 0.2em solid $coul-principale;
+      border-right: 0.5em solid $coul-accent;
+      border-left: 0.5em solid $coul-accent;
     }
   }
 
   &__link:hover{
-    background-color: $coul-principale;
+    background-color: $coul-accent;
   }
 
   &--small{
@@ -100,10 +107,39 @@ footer{
   }
 }
 
+.carousel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.fleche{
+  width: 5%;
+  height: 5%;
+  margin-top: 100px;
+}
+
+.underline{
+  border-bottom: $coul-secondaire;
+}
+
+.infolettre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .section{
-  margin: 2em 0; 
+  margin: 2em 0;
+  border-bottom: $coul-secondaire;
+  }
+
   h2{
     text-transform: uppercase;
+    font-family: $font-titres;
+    font-size: 2em;
   }
   p{
     a{
@@ -123,6 +159,7 @@ footer{
     &:hover{
       background-color: $coul-accent;
       color: $coul-principale;
+      border: 0.2em solid $coul-neutre-pale;
     }
 
     &--accent{
@@ -135,4 +172,3 @@ footer{
       }
     }
   }
- }

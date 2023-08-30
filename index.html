@@ -7,50 +7,70 @@
 	<meta name="description" content="Site page unique Fondation du cancer du sein du Québec">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="style/css/style.css" />
     <link rel="icon" href="favicon.ico"/>
 </head>
 
 <body>
-	<!-- Élément <div> qui sert à centrer le contenu dans la page (container) -->
-	<div class="container">
-		<!-- Vous devez ajouter vos balises sous ce commentaire -->
-		<header>
-			<div class="container header-content">
-				<h1><img class="logo" src="img/fcsq-logo.svg" alt="Logo fondation cancer du sein du Québec"></h1>
-				<nav>
-					<ul class="nav-list">
-						<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel-header" href="#">À propos</a></li>
-						<li class="nav-list__list-item"><a class="nav-list__link" href="#">Pour avoir de nos nouvelles</a></li>
-						<li class="nav-list__list-item"><a class="nav-list__link" href="#">Des statistiques</a></li>
-						<li class="nav-list__list-item"><a class="nav-list__link" href="#">Nous joindre</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+	<header>
+		<div class="container header-content">
+			<h1><img class="logo" src="img/fcsq-logo.png" alt="Logo fondation cancer du sein du Québec"></h1>
+			<nav>
+				<ul class="nav-list">
+					<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel-header" href="#À propos">À propos</a></li>
+					<li class="nav-list__list-item"><a class="nav-list__link" href="#Pour avoir de nos nouvelles">Pour avoir de nos nouvelles</a></li>
+					<li class="nav-list__list-item"><a class="nav-list__link" href="#Des statistiques">Des statistiques</a></li>
+					<li class="nav-list__list-item"><a class="nav-list__link" href="#Nous joindre">Nous joindre</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 		<main>
 			<div class="container">
-				<section id="À propos" class="section">
-					<img src="" alt="">
+				<section class="container" id="À propos" class="section">
+					<div class="carousel underline">
+						<img class="fleche" src="icons/left-arrow.png" alt="flèche gauche">
+						<img src="img/photo-1-carousel.png" alt="femme t-shirt et ruban rose">
+						<img class="fleche" src="icons/right-arrow.png" alt="flèche droite">
+					</div>
 				</section>
-				<section class="section">
-					<h2>Titre de la section</h2>
-					<p>Lorem ipsum, <a href="#">dolor sit amet consectetur adipisicing elit</a>. Numquam quaerat blanditiis fugiat dignissimos cum illo doloribus, debitis tempora, quis quia mollitia vitae temporibus incidunt pariatur facilis autem assumenda, officia ipsa deserunt. Eos cum, ea repudiandae quis expedita dolorem aut fugiat atque ducimus? Eaque sed earum aliquid obcaecati repudiandae illo maxime perspiciatis quibusdam nihil! Quos corrupti fugit eum sint, saepe aliquid magni! Similique quos ullam eaque, odit, hic minus temporibus veniam quasi nesciunt molestiae velit suscipit quia architecto impedit corrupti possimus! Nemo incidunt rerum, nulla maiores veniam cum eligendi, totam dolorum et non velit provident pariatur deleniti architecto nihil atque ullam!</p>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore illum dolor aspernatur atque assumenda debitis numquam beatae perspiciatis asperiores, distinctio eligendi neque enim dolorum iste deserunt vitae sunt magni natus a quibusdam totam similique officia!</p>
-					<a class="section__btn" href="#">En savoir plus</a>
+			</div>
+			<div class="container">
+				<section class="section" id="Pour avoir de nos nouvelles">
+					<div class="infolettre">
+						<h2>29 ans d'existance et de nombreuses avancées incroyables!</h2>
+						<p>RESTEZ INFORMÉ, incrivez-vous à notre infolettre</p>
+						<form id="frmInfolettre">
+							<label for="txtCourriel">Votre courriel :</label>
+							<input type="email" name="txtCourriel">
+						</form>
+					</div>
 				</section>
-			</div>	
+			</div>
+			<div id="Des statistiques">
+				<h3>Des statistiques</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos aspernatur vitae ex minima molestiae nesciunt est quisquam. Amet perferendis nobis fugiat vitae? Numquam, esse nihil laboriosam corrupti enim ipsam!</p>
+				<div>
+					<p>1 femme sur 8</p>
+					<p>recevra un diagnostic de cancer du sein au cours de sa vie.</p>
+					<p>1 femme sur 33</p>
+					<p>en mourra.</p>
+				</div>
+				<a class="section__btn" href="#">En savoir plus</a>
+			</div>
 		</main>
-		<footer>
+		<footer id="Nous joindre">
 			<div class="container">
 				<div class="footer-content">
-					<div><img class="logo--small" src="img/logo.png" alt="Logo de SASS"></div>
+					<img class="logo--small logo--centrer" src="img/fcsq-logo.png" alt="Logo Fondation cancer du sein du Québec"></div>
 					<nav>
 						<ul class="nav-list nav-list--small">
-							<li class="nav-list__list-item"><a class="nav-list__link" href="#À propos">À propos</a></li>
-							<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel-footer" href="#">Concept</a></li>
-							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Documentation</a></li>
-							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Nous joindre</a></li>
+							<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel-footer" href="#À propos">À propos</a></li>
+							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Levées de fonds</a></li>
+							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Réalisations</a></li>
+							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Carrière</a></li>
+							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Blogue</a></li>
+							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Politiques de confidentialité</a></li>
 						</ul>
 					</nav>
 				</div>

@@ -21,11 +21,11 @@ body {
 }
 
 header {
-  background-color: #7d8a99;
+  background-color: #fea2b1;
 }
 
 footer {
-  background-color: #00203d;
+  background-color: #7d8a99;
   color: #ffffff;
   margin-top: auto;
   padding: 1em;
@@ -47,10 +47,13 @@ footer {
 }
 
 .logo {
-  width: 30%;
+  width: 100%;
 }
 .logo--small {
-  width: 10%;
+  width: 50%;
+}
+.logo--centrer {
+  align-items: center;
 }
 
 .nav-list {
@@ -63,51 +66,85 @@ footer {
 .nav-list__link {
   display: inline-block;
   text-transform: uppercase;
-  padding: 0.5em 1em;
+  padding: 1em 1em;
   text-decoration: none;
-  border-radius: 0.5em;
-  color: #f5017c;
+  border-radius: 2em;
+  color: #ffffff;
+  font-weight: 600;
 }
 .nav-list__link--actuel-header {
-  border-bottom: 0.2em solid #f5017c;
+  border-right: 0.5em solid #f5017c;
+  border-left: 0.5em solid #f5017c;
 }
 .nav-list__link--actuel-footer {
-  border-bottom: 0.2em solid #ffffff;
+  border-right: 0.5em solid #f5017c;
+  border-left: 0.5em solid #f5017c;
 }
 .nav-list__link:hover {
-  background-color: #ffffff;
+  background-color: #f5017c;
 }
 .nav-list--small {
   font-size: 0.8em;
 }
 
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.fleche {
+  width: 5%;
+  height: 5%;
+  margin-top: 100px;
+}
+
+.underline {
+  border-bottom: #fea2b1;
+}
+
+.infolettre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .section {
   margin: 2em 0;
+  border-bottom: #fea2b1;
 }
-.section h2 {
+
+h2 {
   text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
 }
-.section p a {
+
+p a {
   color: #f5017c;
 }
-.section__btn {
+
+__btn {
   background-color: #ffffff;
   color: #f5017c;
   text-decoration: none;
   display: inline-block;
-  padding: 0.5em 1em;
-  border-radius: 0.5em;
+  padding: 1em 1em;
+  border-radius: 2em;
   border: solid 0.1em #f5017c;
 }
-.section__btn:hover {
+__btn:hover {
+  background-color: #f5017c;
+  color: #ffffff;
+  border: 0.2em solid #7d8a99;
+}
+__btn--accent {
   background-color: #f5017c;
   color: #ffffff;
 }
-.section__btn--accent {
-  background-color: #f5017c;
-  color: #ffffff;
-}
-.section__btn--accent:hover {
+__btn--accent:hover {
   background-color: #fea2b1;
   color: #f5017c;
 }/*# sourceMappingURL=style.css.map */
