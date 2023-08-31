@@ -2,11 +2,16 @@
 
 $padding-btn: 1em 1em;
 $border-radius-btn: 2em;
+$border-btn: 1px solid #f5017c;
+$border-radius-input: 1em;
+$border-img: 0.2em solid #f5017c;
+$border-radius-img: 2em;
 $font-standard: 'Open Sans', sans-serif;
 $font-titres: 'Lato', sans-serif;
 $coul-principale: #ffffff;
 $coul-secondaire: #fea2b1;
-$coul-neutre-pale: #7d8a99;
+$coul-neutre-pale: #8f929578;
+$coul-neutre-moyen: #8f9295;
 $coul-neutre-foncee: #00203d;
 $coul-accent: #f5017c;
 
@@ -20,9 +25,6 @@ body {
 	color: $coul-neutre-foncee;
 	line-height: 1.4;
   font-family: $font-standard;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 .container {
@@ -31,15 +33,14 @@ body {
 	margin: 0 auto;
 }
 
-header{
+header {
 	background-color: $coul-secondaire;
 }
 
-footer{
-  background-color: $coul-neutre-pale;
+footer {
+  background-color: $coul-neutre-moyen;
   color: $coul-principale;
-  margin-top: auto;
-  padding: 1em;
+  padding-top: 1em;
 }
 
 .header-content{
@@ -50,12 +51,41 @@ footer{
 
 .footer-content{
 	display: flex;
+  flex-direction: column;
 	justify-content: space-between;
 	align-items: center; 
-
-  &__message{
-    text-align: center;
   }
+
+.icons{
+  display: inline-block;
+  align-items: center;
+  max-width: 100%;
+}
+
+.coordonnees-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.coordonnees{
+  text-decoration: none;
+  color: $coul-neutre-foncee;
+  font-family: $font-titres;
+  font-weight: 600;
+  font-size: 1.1em;
+  align-items: center;
+}
+
+.fond-blanc{
+  background-color: $coul-principale;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+.social-media-container{
+  display: flex;
+
 }
 
 .logo{
@@ -68,7 +98,7 @@ footer{
   &--centrer{
     align-items: center;
   }
-}
+  }
 
 .nav-list {
 	list-style: none;
@@ -79,7 +109,6 @@ footer{
   }
 
   &__link{
-    display: inline-block;
     text-transform: uppercase;
     padding: $padding-btn;
     text-decoration: none;
@@ -107,33 +136,114 @@ footer{
   }
 }
 
-.carousel{
+/*------ Positionnement Flexbox ------ */
+
+/*------ Section 1 ------- */
+
+.flex-points{
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.flex-carousel {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-carousel {
   width: 100%;
-  margin-top: 50px;
+  border-radius: $border-radius-img;
+  border: $border-img;
+  margin: 3em 0 1em 0;
 }
 
-.fleche{
-  width: 5%;
-  height: 5%;
-  margin-top: 100px;
+.img-fleche {
+  width: 2em;
+  height: 2em;
 }
 
-.underline{
-  border-bottom: $coul-secondaire;
+.rond {
+  width: 1.5em;
+  padding: 0 5px;
+  margin-bottom: 3em;
 }
 
-.infolettre{
+/*------ Section 2 ------- */
+
+.titre-centrer {
+  text-align: center;
+}
+
+.flex-infolettre {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.section{
-  margin: 2em 0;
-  border-bottom: $coul-secondaire;
+.infolettre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-infolettre{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-formulaire{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.col-quart {
+	width: 25%;
+  padding: 2em;
+}
+
+.col-3-quart {
+  width: 75%;
+  padding: 2em;
+}
+
+label{
+	font-weight: 300;
+}
+
+input{
+	border: $border-btn;
+	font-size: 1.2rem;
+  font-family: $font-standard;
+	color: $coul-accent;
+	padding: 0.5em 5em;
+}
+
+input[type="submit"]{
+	font-size: 1em;
+	padding: 0.5em 2em;
+  background-color: $coul-accent;
+  color: $coul-principale;
+}
+
+input, select{
+	border-radius: $border-radius-input;
+	border: $border-btn;
+	padding: 0.5em 5em;
+  margin: 0 2em;
+	font-size: 1rem;
+}
+
+.section-1 {
+  background-color: $coul-neutre-pale;
+  }
+
+  .section-2 {
+
   }
 
   h2{
@@ -147,7 +257,7 @@ footer{
     }
   }
 
-  &__btn{
+  .btn{
     background-color: $coul-principale;
     color: $coul-accent;
     text-decoration: none;
@@ -171,4 +281,18 @@ footer{
         color: $coul-accent;
       }
     }
+  }
+
+  .social-media-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .social-media-icons{
+
+  }
+
+  .espace {
+    padding: 5em;
   }

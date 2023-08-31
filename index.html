@@ -2,52 +2,64 @@
 <html lang="fr">
 
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<title>Fondation cancer du sein du Québec</title>
 	<meta name="description" content="Site page unique Fondation du cancer du sein du Québec">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="style/css/style.css" />
-    <link rel="icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="style/css/normalize.css">
+	<link rel="stylesheet" href="style/css/style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
 	<header>
 		<div class="container header-content">
-			<h1><img class="logo" src="img/fcsq-logo.png" alt="Logo fondation cancer du sein du Québec"></h1>
+			<h1><img class="Logo" src="img/fcsq-logo.png" alt="Logo fondation cancer du sein du Québec"></h1>
 			<nav>
 				<ul class="nav-list">
-					<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel-header" href="#À propos">À propos</a></li>
-					<li class="nav-list__list-item"><a class="nav-list__link" href="#Pour avoir de nos nouvelles">Pour avoir de nos nouvelles</a></li>
-					<li class="nav-list__list-item"><a class="nav-list__link" href="#Des statistiques">Des statistiques</a></li>
-					<li class="nav-list__list-item"><a class="nav-list__link" href="#Nous joindre">Nous joindre</a></li>
+					<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel-header" href="#À-propos">À propos</a></li>
+					<li class="nav-list__list-item"><a class="nav-list__link" href="#Pour-avoir-de-nos-nouvelles">Pour avoir de nos nouvelles</a></li>
+					<li class="nav-list__list-item"><a class="nav-list__link" href="#Des-statistiques">Des statistiques</a></li>
+					<li class="nav-list__list-item"><a class="nav-list__link" href="#Nous-joindre">Nous joindre</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-		<main>
-			<div class="container">
-				<section class="container" id="À propos" class="section">
-					<div class="carousel underline">
-						<img class="fleche" src="icons/left-arrow.png" alt="flèche gauche">
-						<img src="img/photo-1-carousel.png" alt="femme t-shirt et ruban rose">
-						<img class="fleche" src="icons/right-arrow.png" alt="flèche droite">
-					</div>
-				</section>
+	<main>
+		<section class="section-1" id="À-propos">
+			<div class="container flex-carousel">
+				<img class="img-fleche" src="icons/left-arrow.png" alt="flèche gauche">
+				<img class="img-carousel" src="img/photo-1-carousel.png" alt="femme t-shirt et ruban rose">
+				<img class="img-fleche" src="icons/right-arrow.png" alt="flèche droite">
 			</div>
-			<div class="container">
-				<section class="section" id="Pour avoir de nos nouvelles">
-					<div class="infolettre">
-						<h2>29 ans d'existance et de nombreuses avancées incroyables!</h2>
-						<p>RESTEZ INFORMÉ, incrivez-vous à notre infolettre</p>
-						<form id="frmInfolettre">
-							<label for="txtCourriel">Votre courriel :</label>
-							<input type="email" name="txtCourriel">
-						</form>
-					</div>
-				</section>
+			<div class="flex-points">
+				<img class="rond" src="icons/dark-circle.png" alt="rond plein">
+				<img class="rond" src="icons/light-circle-black-stroke.png" alt="rond vide">
+				<img class="rond" src="icons/light-circle-black-stroke.png" alt="rond vide">
 			</div>
-			<div id="Des statistiques">
+		</section>
+
+		<section class="container section-2">
+			<div class="flex-infolettre infolettre" id="Pour-avoir-de-nos-nouvelles">
+				<h2 class="titre-centrer">29 ans d'existance et <br> de nombreuses avancées incroyables!</h2>
+				<p>RESTEZ INFORMÉ, incrivez-vous à notre infolettre.</p>
+				<div class="form-infolettre">
+					<form action="confirmation.html" method="post" id="frmInfolettre">
+						<div class="flex-formulaire">
+							<div class="col-demie">
+								<label hidden for="txtCourriel">Votre courriel</label>
+								<input type="email" id="txtCourriel" name="txtCourriel" placeholder="Votre courriel" required>
+							</div>
+							<div class="col-demie">
+								<input class="btn" type="submit" id="sbtInfolettre" value="Soumettre" class="bouton">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div id="Des-statistiques">
+				<img src="img/image graphique.png" alt="graphique taux cancer femme et homme">
 				<h3>Des statistiques</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos aspernatur vitae ex minima molestiae nesciunt est quisquam. Amet perferendis nobis fugiat vitae? Numquam, esse nihil laboriosam corrupti enim ipsam!</p>
 				<div>
@@ -58,25 +70,44 @@
 				</div>
 				<a class="section__btn" href="#">En savoir plus</a>
 			</div>
-		</main>
-		<footer id="Nous joindre">
-			<div class="container">
-				<div class="footer-content">
-					<img class="logo--small logo--centrer" src="img/fcsq-logo.png" alt="Logo Fondation cancer du sein du Québec"></div>
-					<nav>
-						<ul class="nav-list nav-list--small">
-							<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel-footer" href="#À propos">À propos</a></li>
-							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Levées de fonds</a></li>
-							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Réalisations</a></li>
-							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Carrière</a></li>
-							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Blogue</a></li>
-							<li class="nav-list__list-item"><a class="nav-list__link" href="#">Politiques de confidentialité</a></li>
-						</ul>
-					</nav>
-				</div>
+		</section>
+	</main>
+	<footer id="Nous-joindre">
+		<div class="container">
+			<div class="logo--centrer">
+				<img src="img/fcsq-logo.png" alt="Logo Fondation cancer du sein du Québec">
 			</div>
-		</footer>
-	</div>
+			<div>
+				<nav>
+					<ul class="nav-list nav-list--small">
+						<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel-footer" href="#">À propos</a></li>
+						<li class="nav-list__list-item"><a class="nav-list__link" href="#">Levées de fonds</a></li>
+						<li class="nav-list__list-item"><a class="nav-list__link" href="#">Réalisations</a></li>
+						<li class="nav-list__list-item"><a class="nav-list__link" href="#">Carrière</a></li>
+						<li class="nav-list__list-item"><a class="nav-list__link" href="#">Blogue</a></li>
+						<li class="nav-list__list-item"><a class="nav-list__link" href="#">Politiques de confidentialité</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="social-media-container fond-blanc">
+				<div>
+					<p>Fait par : Danika Gemme</p>
+				</div>
+				<div class="icons-container">
+					<img class="icons" src="icons/facebook.png" alt="icon Facebook">
+					<img class="icons" src="icons/linkedin.png" alt="icon Linkedin">
+					<img class="icons" src="icons/twitter.png" alt="icon Twitter">
+					<img class="icons" src="icons/instagram.png" alt="icon Instagram">
+				</div>
+				<address class="coordonnees-container">
+					<img class="icons" src="icons/telephone.png" alt="icon téléphone">
+					<a class="coordonnees" href="tel:+19876543210">987 654-3210</a>
+					<img class="icons" src="icons/mail.png" alt="icon courriel">
+					<a class="coordonnees" href="mailto:info@rubanrose.com">info@rubanrose.com</a>
+				</address>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
