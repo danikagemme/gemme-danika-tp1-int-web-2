@@ -1,0 +1,101 @@
+@use 'variables' as v;
+
+.infolettre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titre{
+        text-transform: uppercase;
+        font-family: v.$font-titres;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 3em 0em 0.5em 0em;
+    }
+    &__txt{
+        font-family: v.$font-standard;
+        font-size: 1.5em;
+    }
+}
+
+.form-infolettre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-formulaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+input{
+    border: v.$border-btn;
+    font-size: 1.2rem;
+    font-family: v.$font-standard;
+    color: v.$coul-accent;
+}
+  
+input[type="submit"]{
+    font-size: 1em;
+    padding: 0.5em 2em;
+    margin: 0;
+}
+  
+input, select{
+    border-radius: v.$border-radius-input;
+    border: v.$border-btn;
+    padding: 0.5em 5em 0.5em 2em;
+    margin: 0 2em;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+  
+.btn{
+    background-color: v.$coul-accent;
+    color: v.$coul-principale;
+    border: v.$border-btn;
+    border-radius: v.$border-radius-input;
+    border: v.$border-btn;
+  
+    &--btn:hover{
+      background-color: v.$coul-neutre-foncee;
+      color: v.$coul-principale;
+      border: v.$border-btn;
+    }
+}
+
+.flex-stat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3em;
+}
+
+.flex-donnees{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.col-demie{
+    width: 50%;
+    align-content: start;
+}
+
+.col-quart{
+    width: 23%;
+}
+
+.col-trois-quart{
+    width: 73%;
+}
+
+.image{
+    width: 85%;
+}

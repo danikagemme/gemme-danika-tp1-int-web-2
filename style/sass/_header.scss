@@ -1,0 +1,11 @@
+@use 'variables' as v;
+
+header {
+	background-color: v.$coul-secondaire;
+}
+
+.header-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}

@@ -1,0 +1,40 @@
+@use 'variables' as v;
+
+/* ------ Navigation header ------*/
+.nav-list {
+	list-style: none;
+
+  &__list-item{
+    display: inline-block;
+    margin-left: 0.8em;
+  }
+
+  &__link{
+    text-transform: uppercase;
+    padding: v.$padding-btn;
+    text-decoration: none;
+    border-radius: v.$border-radius-btn;
+    color: v.$coul-neutre-foncee;
+    font-weight: 600;
+
+    &--actuel{
+      border-right: 0.5em solid v.$coul-accent;
+      border-left: 0.5em solid v.$coul-accent;
+    }
+  }
+
+  &__link:hover{
+    background-color: v.$coul-accent;
+  }
+
+  &--small{
+    font-size: 0.8em;
+  }
+}
+
+.flex-nav-secondaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
