@@ -38,6 +38,9 @@ body {
 
 /*------ Page confirmation inscription infolettre ------ */
 
-.espace {
+.position {
+  display: flex;
+  justify-content: center;
   padding: 5em;
+  margin: 0;
 }

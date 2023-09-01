@@ -54,6 +54,7 @@ input, select{
 a{
     text-decoration: none;
     padding: 0.5em 1em;
+    margin-top: 5em;
 }
   
 .btn{
@@ -62,8 +63,10 @@ a{
     border: v.$border-btn;
     border-radius: v.$border-radius-input;
     border: v.$border-btn;
+    display: inline-block;
+    margin-top: 2em;
   
-    &--btn:hover{
+    &:hover{
       background-color: v.$coul-neutre-foncee;
       color: v.$coul-principale;
       border: v.$border-btn;
@@ -74,7 +77,12 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 3em;
+
+    &__btn{
+        background-color: v.$coul-accent;
+        color: v.$coul-principale;
+        margin: 5em 0;
+    }
 }
 
 .flex-donnees{
@@ -98,4 +106,8 @@ a{
 
 .image{
     width: 85%;
+}
+
+.interligne{
+    margin: 0;
 }

@@ -4,8 +4,25 @@ header {
 	background-color: v.$coul-secondaire;
 }
 
+.header__logo{
+	margin: 15px 0;
+	max-height: 200px;
+	max-width: 200px;
+	width: 100%;
+	position: relative;
+	animation: rotate-itself 3s 1s normal backwards ease-in;
+}
+
 .header-content{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;	
+}
+
+@keyframes rotate-itself {
+	from {left: 0;}
+	to {
+		right: 0;
+		transform: rotate(360deg);		
+	}
 }
