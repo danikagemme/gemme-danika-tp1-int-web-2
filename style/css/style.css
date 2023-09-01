@@ -1,21 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-header {
+.header {
   background-color: #fea2b1;
 }
-
-.header__logo {
-  margin: 15px 0;
-  max-height: 200px;
-  max-width: 200px;
-  width: 100%;
-  position: relative;
-  animation: rotate-itself 3s 1s normal backwards ease-in;
-}
-
-.header-content {
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__logo {
+  width: 100%;
+  position: relative;
+  animation: rotate-itself 3s 1s normal backwards ease-in;
 }
 
 @keyframes rotate-itself {
@@ -93,38 +88,37 @@ header {
   height: 2em;
 }
 
-.infolettre {
+.section {
+  display: inline;
+}
+.section__infolettre {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.infolettre__titre {
+.section__infolettre-titre {
+  display: flex;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   font-size: 2.5em;
   text-align: center;
   margin: 3em 0em 0.5em 0em;
 }
-.infolettre__txt {
+.section__infolettre-txt {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
+  margin-bottom: 1em;
 }
-
-.form {
+.section__form {
   margin: 0em;
   padding-bottom: 4em;
   font-size: 1.3em;
   width: 30%;
 }
-.form__a {
-  text-decoration: none;
-  padding: 0.5em 1em;
-  margin-top: 5em;
-}
-.form__label {
+.section__form-label {
   display: none;
 }
-.form__input {
+.section__form-input {
   border-radius: 1em;
   border: 1px solid #f5017c;
   font-size: 1em;
@@ -132,13 +126,13 @@ header {
   margin: 0 2em;
   width: 20em;
 }
-.form__position {
+.section__form-position {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.form__btn-action {
+.section__btn-action {
   padding: 0.5em 2em;
   margin: 0 1em;
   background-color: #f5017c;
@@ -146,45 +140,62 @@ header {
   border: 1px solid #f5017c;
   border-radius: 2em;
 }
-.form__btn-action:hover {
+.section__btn-action:hover {
   background-color: #fea2b1;
   color: #00203d;
 }
-.form__btn-action--envoyer {
+.section__btn-action--envoyer {
   background-color: #00203d;
   color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
 }
-.form__btn-action--envoyer:hover {
+.section__btn-action--envoyer:hover {
   background-color: #f5017c;
+}
+.section__btn-action--envoyer--savoir-plus {
+  background-color: #fea2b1;
+  color: #00203d;
+}
+.section__btn-action--envoyer--savoir-plus:hover {
+  background-color: #f5017c;
+  color: #ffffff;
 }
 
 .flex-stat {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-.flex-stat__btn-savoir-plus {
-  background-color: #f5017c;
-  color: #ffffff;
-  margin: 5em 0;
+  margin-bottom: 6em;
 }
 .flex-stat__image {
   width: 85%;
 }
-
-.flex-donnees {
+.flex-stat__carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flex-stat__donnees {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 0;
 }
-.flex-donnees__interligne {
-  margin: 0;
+.flex-stat__p {
+  margin-bottom: 2em;
+}
+.flex-stat__a {
+  display: inline;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin: 10em 0em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .col-demie {
-  width: 50%;
+  width: 48%;
   align-content: start;
 }
 
@@ -196,28 +207,33 @@ header {
   width: 73%;
 }
 
-footer {
+h2 {
+  display: inline;
+  margin: 0em;
+  padding: 0em;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0em;
+  padding: 0em;
+}
+
+.footer {
   background-color: rgba(143, 146, 149, 0.4705882353);
   padding-top: 1em;
 }
-footer p {
+.footer__p {
   color: #00203d;
 }
-
 .footer__logo {
-  margin: 15px 0;
-  max-height: 200px;
-  max-width: 200px;
-  width: 100%;
+  width: 50%;
   position: relative;
   animation: rotate-itself 3s 1s normal backwards ease-in;
 }
-
-.footer-content {
+.footer__logo--centrer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 
 .icons-container {
@@ -292,16 +308,6 @@ body {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-}
-
-.logo {
-  width: 100%;
-}
-.logo--small {
-  width: 50%;
-}
-.logo--centrer {
-  align-items: center;
 }
 
 /*------ Page confirmation inscription infolettre ------ */

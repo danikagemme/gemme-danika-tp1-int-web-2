@@ -1,40 +1,41 @@
 @use 'variables' as v;
 
-.infolettre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.section {
+    display: inline;
 
-    &__titre{
+    &__infolettre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__infolettre-titre {
+        display: flex;
         text-transform: uppercase;
         font-family: v.$font-titres;
         font-size: 2.5em;
         text-align: center;
         margin: 3em 0em 0.5em 0em;
     }
-    &__txt{
+
+    &__infolettre-txt {
         font-family: v.$font-standard;
         font-size: 1.5em;
+        margin-bottom: 1em;
     }
-}
 
-.form{
+    &__form {
     margin: 0em;
     padding-bottom: 4em;
     font-size: 1.3em;
     width: 30%;
-
-    &__a{
-        text-decoration: none;
-        padding: 0.5em 1em;
-        margin-top: 5em;
     }
 
-    &__label {
+    &__form-label {
 	    display: none;
     }
 
-    &__input {
+    &__form-input {
         border-radius: v.$border-radius-input;
         border: v.$border-btn;
         font-size: 1em;
@@ -43,7 +44,7 @@
 	    width: 20em;
     }
 
-    &__position {
+    &__form-position {
 	    display: flex;
 	    flex-direction: row;
 	    justify-content: center;
@@ -68,58 +69,82 @@
             color: v.$coul-principale;
             font-weight: 600;
             text-transform: uppercase;
-    
+        
             &:hover {
                 background-color: v.$coul-accent; 
             }
 
-        &--savoir-plus {
-            background-color: v.$coul-secondaire;
-            color: v.$coul-neutre-foncee;
+            &--savoir-plus {
+                background-color: v.$coul-secondaire;
+                color: v.$coul-neutre-foncee;
 
-            &:hover {
-                background-color: v.$coul-accent;
-                color: v.$coul-principale;
+                &:hover {
+                    background-color: v.$coul-accent;
+                    color: v.$coul-principale;
+                }
             }
         }
     }
 }
 
-.flex-stat{
+.flex-stat {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 6em;
 
-    &__btn-savoir-plus{
-        background-color: v.$coul-accent;
-        color: v.$coul-principale;
-        margin: 5em 0;
-    }
-
-    &__image{
+    &__image {
         width: 85%;
     }
-}
 
-.flex-donnees{
+    &__carte {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__donnees {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0;
+    }
 
-    &__interligne{
-        margin: 0;
+    &__p {
+        margin-bottom: 2em;
+    }
+
+    &__a {
+        display: inline;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        margin: 10em 0em;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 }
 
-.col-demie{
-    width: 50%;
+.col-demie {
+    width: 48%;
     align-content: start;
 }
 
-.col-quart{
+.col-quart {
     width: 23%;
 }
 
-.col-trois-quart{
+.col-trois-quart {
     width: 73%;
+}
+
+h2 {
+    display: inline;
+    margin: 0em;
+    padding: 0em;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0em;
+    padding: 0em;
 }

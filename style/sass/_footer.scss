@@ -1,29 +1,24 @@
 @use 'variables' as v;
 
-footer{
+.footer {
     background-color: v.$coul-neutre-pale;
     padding-top: 1em;
 
-    p{
+    &__p{
         color: v.$coul-neutre-foncee;
     }
-}
 
-.footer__logo{
-	margin: 15px 0;
-	max-height: 200px;
-	max-width: 200px;
-	width: 100%;
-	position: relative;
-	animation: rotate-itself 3s 1s normal backwards ease-in;
-}
+    &__logo{
+	    width: 50%;
+	    position: relative;
+	    animation: rotate-itself 3s 1s normal backwards ease-in;
 
-.footer-content{
-	display: flex;
-    flex-direction: column;
-	justify-content: space-between;
-	align-items: center; 
-  }
+        &--centrer{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
 
 .icons-container{
     display: flex;

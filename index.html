@@ -12,10 +12,10 @@
 </head>
 
 <body>
-	<header>
-		<div class="container header-content">
-			<div class="header__logo">
-				<h1><img class="logo" src="img/fcsq-logo.png" alt="Logo fondation cancer du sein du Québec"></h1>
+	<header class="header">
+		<div class="container header__content">
+			<div>
+				<h1><img class="header__logo" src="img/fcsq-logo.png" alt="Logo fondation cancer du sein du Québec"></h1>
 			</div>
 			<nav>
 				<ul class="nav-list">
@@ -42,21 +42,21 @@
 		</div>
 
 		<section class="container">
-			<div class="infolettre" id="Pour-avoir-de-nos-nouvelles">
+			<div class="section__infolettre" id="Pour-avoir-de-nos-nouvelles">
 				<div>
-					<h2 class="infolettre__titre" >29 ans d'existance et <br> de nombreuses avancées incroyables!</h2>
+					<h2 class="section__infolettre-titre" >29 ans d'existance et <br> de nombreuses avancées incroyables!</h2>
 				</div>
 				<div>
-					<p class="infolettre__txt">RESTEZ INFORMÉ, incrivez-vous à notre infolettre.</p>
+					<p class="section__infolettre-txt">RESTEZ INFORMÉ, incrivez-vous à notre infolettre.</p>
 				</div>
-				<form class="form" action="confirmation.html" method="post" id="frmInfolettre">
-					<div class="form__position">
-						<div class="form__item">
-							<label class="form__label" for="txtCourriel">Votre courriel</label>
-							<input class="form__input" type="email" id="txtCourriel" name="txtCourriel" placeholder="Votre courriel" required>
+				<form class="section__form" action="confirmation.html" method="post" id="frmInfolettre">
+					<div class="section__form-position">
+						<div class="section__form-item">
+							<label class="section__form-label" for="txtCourriel">Votre courriel</label>
+							<input class="section__form-input" type="email" id="txtCourriel" name="txtCourriel" placeholder="Votre courriel" required>
 						</div>
 						<div>
-							<input class="form__btn-action form__btn-action--envoyer" type="submit" value="Envoyer">
+							<input class="section__btn-action section__btn-action--envoyer" type="submit" value="Envoyer">
 						</div>
 					</div>
 				</form>
@@ -66,33 +66,33 @@
 				<div class="col-demie">
 					<img class="flex-stat__image" src="img/image-graphique.png" alt="graphique taux cancer femme et homme">
 				</div>
-				<div class="col-demie">
+				<div class="col-demie carte">
 					<div>
 						<h3>Des statistiques</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos aspernatur vitae ex minima molestiae nesciunt est quisquam. Amet perferendis nobis fugiat vitae? Numquam, esse nihil laboriosam corrupti enim ipsam!</p>
+						<p class="flex-stat__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eos aspernatur vitae ex minima molestiae nesciunt est quisquam. Amet perferendis nobis fugiat vitae? Numquam, esse nihil laboriosam corrupti enim ipsam!</p>
 					</div>
-					<div class="flex-donnees">
+					<div class="flex-stat__donnees">
 						<div class="col-demie">
-							<h2 class="flex-donnees__interligne">1 femme sur 8</h2>
-							<p class="flex-donnees__interligne">recevra un diagnostic de cancer <br> du sein au cours de sa vie.</p>
+							<h2 class="flex-stat__h2">1 femme sur 8</h2>
+							<p class="flex-stat__p">recevra un diagnostic de cancer du sein au cours de sa vie.</p>
 						</div>
 						<div class="col-demie">
-							<h2 class=flex-donnees__interligne">1 femme sur 33</h2>
-							<p class="flex-donnees__interligne">en mourra.</p>
+							<h2 class="flex-stat__h2">1 femme sur 33</h2>
+							<p class="flex-stat__p">en mourra.</p>
 						</div>
 					</div>
-					<div class="btn-action--savoir-plus">
-						<a href="#">En savoir plus</a>
+					<div>
+						<a class="section__btn-action section__btn-action--savoir-plus flex-stat__a" href="#">En savoir plus</a>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	 <footer id="Nous-joindre">
+	 <footer class="footer" id="Nous-joindre">
 		<div class="container">
 			<div class="flex-nav-secondaire">
-				<div class="footer__logo">
+				<div class="footer__logo footer__logo--centrer">
 					<img src="img/fcsq-logo.png" alt="Logo Fondation cancer du sein du Québec">
 				</div>
 				<nav>
