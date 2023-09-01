@@ -30,14 +30,14 @@
 	<main>
 		<div class="section-1" id="À-propos">
 			<div class="container flex-carousel">
-				<img class="img-fleche" src="icons/left-arrow.png" alt="flèche gauche">
-				<img class="img-carousel" src="img/photo-1-carousel.png" alt="femme t-shirt et ruban rose">
-				<img class="img-fleche" src="icons/right-arrow.png" alt="flèche droite">
+				<img class="flex-carousel__img-fleche" src="icons/left-arrow.png" alt="flèche gauche">
+				<img class="flex-carousel__img-carousel" src="img/photo-1-carousel.png" alt="femme t-shirt et ruban rose">
+				<img class="flex-carousel__img-fleche" src="icons/right-arrow.png" alt="flèche droite">
 			</div>
 			<div class="flex-points">
-				<img class="rond" src="icons/dark-circle.png" alt="rond plein">
-				<img class="rond" src="icons/light-circle-black-stroke.png" alt="rond vide">
-				<img class="rond" src="icons/light-circle-black-stroke.png" alt="rond vide">
+				<img class="flex-points__rond" src="icons/dark-circle.png" alt="rond plein">
+				<img class="flex-points__rond" src="icons/light-circle-black-stroke.png" alt="rond vide">
+				<img class="flex-points__rond" src="icons/light-circle-black-stroke.png" alt="rond vide">
 			</div>
 		</div>
 
@@ -49,14 +49,14 @@
 				<div>
 					<p class="infolettre__txt">RESTEZ INFORMÉ, incrivez-vous à notre infolettre.</p>
 				</div>
-				<form action="confirmation.html" method="post" id="frmInfolettre">
-					<div class="flex-formulaire">
-						<div class="col-trois-quart">
-							<label hidden for="txtCourriel">Votre courriel</label>
-							<input type="email" id="txtCourriel" name="txtCourriel" placeholder="Votre courriel" required>
+				<form class="form" action="confirmation.html" method="post" id="frmInfolettre">
+					<div class="form__position">
+						<div class="form__item">
+							<label class="form__label" for="txtCourriel">Votre courriel</label>
+							<input class="form__input" type="email" id="txtCourriel" name="txtCourriel" placeholder="Votre courriel" required>
 						</div>
-						<div class="col-quart btn">
-							<input type="submit" id="sbtInfolettre" value="Soumettre">
+						<div>
+							<input class="form__btn-action form__btn-action--envoyer" type="submit" value="Envoyer">
 						</div>
 					</div>
 				</form>
@@ -64,7 +64,7 @@
 
 			<div class="flex-stat" id="Des-statistiques">
 				<div class="col-demie">
-					<img class="image" src="img/image-graphique.png" alt="graphique taux cancer femme et homme">
+					<img class="flex-stat__image" src="img/image-graphique.png" alt="graphique taux cancer femme et homme">
 				</div>
 				<div class="col-demie">
 					<div>
@@ -73,16 +73,16 @@
 					</div>
 					<div class="flex-donnees">
 						<div class="col-demie">
-							<h2 class="interligne">1 femme sur 8</h2>
-							<p class="interligne">recevra un diagnostic de cancer <br> du sein au cours de sa vie.</p>
+							<h2 class="flex-donnees__interligne">1 femme sur 8</h2>
+							<p class="flex-donnees__interligne">recevra un diagnostic de cancer <br> du sein au cours de sa vie.</p>
 						</div>
 						<div class="col-demie">
-							<h2 class="interligne">1 femme sur 33</h2>
-							<p class="interligne">en mourra.</p>
+							<h2 class=flex-donnees__interligne">1 femme sur 33</h2>
+							<p class="flex-donnees__interligne">en mourra.</p>
 						</div>
 					</div>
-					<div>
-						<a class="flex-stat__btn" href="#">En savoir plus</a>
+					<div class="btn-action--savoir-plus">
+						<a href="#">En savoir plus</a>
 					</div>
 				</div>
 			</div>
