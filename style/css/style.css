@@ -56,6 +56,25 @@
   padding-top: 1.5em;
 }
 
+/* ----------- Media Queries ------------*/
+@media screen and (max-width: 1200px) {
+  .nav-header-small {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav-header-small {
+    font-size: 0.65em;
+  }
+}
+@media screen and (max-width: 855px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  .show-on-mobile {
+    width: 10%;
+  }
+}
 .section-1 {
   background-color: rgba(143, 146, 149, 0.4705882353);
 }
@@ -88,6 +107,12 @@
   height: 2em;
 }
 
+/* ----------- Media Queries ------------*/
+@media screen and (max-width: 850px) {
+  .flex-carousel__img-fleche {
+    display: none;
+  }
+}
 .section {
   display: inline;
 }
@@ -135,7 +160,7 @@
 .section__btn-action {
   padding: 0.5em 2em;
   margin: 0 1em;
-  background-color: #f5017c;
+  background-color: #00203d;
   color: #ffffff;
   border: 1px solid #f5017c;
   border-radius: 2em;
@@ -219,6 +244,21 @@ p {
   padding: 0em;
 }
 
+/* ----------- Media Queries ------------*/
+@media screen and (max-width: 850px) {
+  .flex-stat {
+    flex-direction: column;
+  }
+  .col-demie {
+    width: auto;
+  }
+  .section__form-position {
+    flex-direction: column;
+  }
+  .section__form-input {
+    margin: 1em;
+  }
+}
 .footer {
   background-color: rgba(143, 146, 149, 0.4705882353);
   padding-top: 1em;
@@ -227,7 +267,7 @@ p {
   color: #00203d;
 }
 .footer__logo {
-  width: 50%;
+  width: 75%;
   position: relative;
   animation: rotate-itself 3s 1s normal backwards ease-in;
 }
@@ -265,7 +305,7 @@ p {
   padding: 0;
 }
 
-.fond-blanc {
+.fond-ligne-infos {
   background-color: #ffffff;
   padding: 1em;
   margin-top: 3em;
@@ -290,6 +330,40 @@ p {
   to {
     right: 0;
     transform: rotate(360deg);
+  }
+}
+/* ----------- Media Queries ------------*/
+@media screen and (max-width: 1000px) {
+  .ligne-infos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 855px) {
+  .flex-utilitaire {
+    flex-direction: column;
+    vertical-align: middle;
+  }
+  .col-tiers {
+    width: auto;
+  }
+  .flex-nav-secondaire {
+    display: none;
+  }
+  .coordonnees-container {
+    flex-direction: column;
+    padding: 2em;
+  }
+  .icons-container {
+    padding-top: 2em;
+  }
+  .footer {
+    background-color: #ffffff;
+  }
+  .fond-ligne-infos {
+    background-color: rgba(143, 146, 149, 0.4705882353);
+    border-top: 2em solid #f5017c;
   }
 }
 /* Composantes principales */

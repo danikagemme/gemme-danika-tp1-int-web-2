@@ -17,7 +17,10 @@
 			<div>
 				<h1><img class="header__logo" src="img/fcsq-logo.png" alt="Logo fondation cancer du sein du Québec"></h1>
 			</div>
-			<nav>
+			<div class="show-on-mobile">
+				<a><img src="icons/icon-menu-burger.svg" alt="icon menu burger"></a>
+			</div>
+			<nav class="nav-header-small hide-on-mobile">
 				<ul class="nav-list">
 					<li class="nav-list__list-item"><a class="nav-list__link nav-list__link--actuel" href="#À-propos">À propos</a></li>
 					<li class="nav-list__list-item"><a class="nav-list__link" href="#Pour-avoir-de-nos-nouvelles">Pour avoir de nos nouvelles</a></li>
@@ -29,7 +32,7 @@
 	</header>
 	<main>
 		<div class="section-1" id="À-propos">
-			<div class="container flex-carousel">
+			<div class="container flex-carousel div-flex-carousel">
 				<img class="flex-carousel__img-fleche" src="icons/left-arrow.png" alt="flèche gauche">
 				<img class="flex-carousel__img-carousel" src="img/photo-1-carousel.png" alt="femme t-shirt et ruban rose">
 				<img class="flex-carousel__img-fleche" src="icons/right-arrow.png" alt="flèche droite">
@@ -92,8 +95,8 @@
 	 <footer class="footer" id="Nous-joindre">
 		<div class="container">
 			<div class="flex-nav-secondaire">
-				<div class="footer__logo footer__logo--centrer">
-					<img src="img/fcsq-logo.png" alt="Logo Fondation cancer du sein du Québec">
+				<div>
+					<img class="footer__logo footer__logo--centrer" src="img/fcsq-logo.png" alt="Logo Fondation cancer du sein du Québec">
 				</div>
 				<nav>
 					<ul class="nav-list--small">
@@ -108,7 +111,7 @@
 			</div>
 		</div>
 
-		<div class="fond-blanc">
+		<div class="fond-ligne-infos">
 			<div class="container flex-utilitaire">
 				<div class="col-tiers">	
 					<p>Fait par : Danika Gemme</p>
@@ -121,7 +124,7 @@
 						<img class="icons-container__icons" src="icons/instagram.png" alt="icon Instagram">
 					</div>
 				</div>
-				<div class="col-tiers">
+				<div class="col-tiers flex-utilitaire">
 					<address class="coordonnees-container">
 						<img class="icons-container__icons" src="icons/telephone.png" alt="icon téléphone">
 						<a class="coordonnees-container__coordonnees" href="tel:+19876543210">987 654-3210</a>

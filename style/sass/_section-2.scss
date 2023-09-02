@@ -54,7 +54,7 @@
     &__btn-action {
 	    padding: 0.5em 2em;
         margin: 0 1em;
-        background-color: v.$coul-accent;
+        background-color: v.$coul-neutre-foncee;
 	    color: v.$coul-principale;
 	    border: v.$border-btn;
         border-radius: v.$border-radius-btn;
@@ -148,3 +148,20 @@ p {
     margin: 0em;
     padding: 0em;
 }
+
+/* ----------- Media Queries ------------*/
+
+@media screen and (max-width: 850px) {
+    .flex-stat{
+      flex-direction: column;
+    }
+    .col-demie{
+        width: auto;
+    }
+    .section__form-position{
+        flex-direction: column;
+    }
+    .section__form-input{
+        margin: 1em;
+    }
+  }
