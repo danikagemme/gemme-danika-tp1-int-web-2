@@ -40,6 +40,11 @@
     padding-top: 1.5em;
 }
 
+.nav-media-queries{
+  @extend.nav-header-small;
+  @extend.hide-on-mobile;
+}
+
 /* ----------- Media Queries ------------*/
 
 @media screen and (max-width: 1200px) {

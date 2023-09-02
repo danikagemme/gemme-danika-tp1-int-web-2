@@ -58,17 +58,17 @@
 
 /* ----------- Media Queries ------------*/
 @media screen and (max-width: 1200px) {
-  .nav-header-small {
+  .nav-header-small, .nav-media-queries {
     font-size: 0.8em;
   }
 }
 @media screen and (max-width: 1000px) {
-  .nav-header-small {
+  .nav-header-small, .nav-media-queries {
     font-size: 0.65em;
   }
 }
 @media screen and (max-width: 855px) {
-  .hide-on-mobile {
+  .hide-on-mobile, .nav-media-queries {
     display: none !important;
   }
   .show-on-mobile {
@@ -157,7 +157,7 @@
   justify-content: center;
   align-items: center;
 }
-.section__btn-action {
+.section__btn-action, .btn-envoyer {
   padding: 0.5em 2em;
   margin: 0 1em;
   background-color: #00203d;
@@ -165,17 +165,17 @@
   border: 1px solid #f5017c;
   border-radius: 2em;
 }
-.section__btn-action:hover {
+.section__btn-action:hover, .btn-envoyer:hover {
   background-color: #fea2b1;
   color: #00203d;
 }
-.section__btn-action--envoyer {
+.section__btn-action--envoyer, .btn-envoyer {
   background-color: #00203d;
   color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
 }
-.section__btn-action--envoyer:hover {
+.section__btn-action--envoyer:hover, .btn-envoyer:hover {
   background-color: #f5017c;
 }
 .section__btn-action--envoyer--savoir-plus {
@@ -390,4 +390,53 @@ body {
   justify-content: center;
   padding: 5em;
   margin: 0;
+}
+
+/* ----------- Media Queries ------------*/
+@media screen and (max-width: 1200px) {
+  .nav-header-small {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ligne-infos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-header-small {
+    font-size: 0.65em;
+  }
+}
+@media screen and (max-width: 855px) {
+  .flex-utilitaire {
+    flex-direction: column;
+    vertical-align: middle;
+  }
+  .col-tiers {
+    width: auto;
+  }
+  .flex-nav-secondaire {
+    display: none;
+  }
+  .coordonnees-container {
+    flex-direction: column;
+    padding: 2em;
+  }
+  .icons-container {
+    padding-top: 2em;
+  }
+  .footer {
+    background-color: #ffffff;
+  }
+  .fond-ligne-infos {
+    background-color: rgba(143, 146, 149, 0.4705882353);
+    border-top: 2em solid #f5017c;
+  }
+  .hide-on-mobile {
+    display: none !important;
+  }
+  .show-on-mobile {
+    width: 10%;
+  }
 }/*# sourceMappingURL=style.css.map */

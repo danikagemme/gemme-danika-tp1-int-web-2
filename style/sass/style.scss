@@ -15,7 +15,7 @@ body {
 	background-color: v.$coul-principale;
 	color: v.$coul-neutre-foncee;
 	line-height: 1.4;
-  font-family: v.$font-standard;
+  	font-family: v.$font-standard;
 }
 
 .container {
@@ -32,3 +32,55 @@ body {
   padding: 5em;
   margin: 0;
 }
+
+/* ----------- Media Queries ------------*/
+
+@media screen and (max-width: 1200px) {
+	.nav-header-small{
+	  font-size: 0.8em;
+	}
+  }
+
+@media screen and (max-width: 1000px) {
+    .ligne-infos{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+	.nav-header-small{
+		font-size: 0.65em;
+	}
+}
+
+  @media screen and (max-width: 855px) {
+    .flex-utilitaire{
+      flex-direction: column;
+      vertical-align: middle;
+    }
+    .col-tiers{
+        width: auto;
+    }
+    .flex-nav-secondaire{
+        display: none;
+    }
+    .coordonnees-container{
+        flex-direction: column;
+        padding: 2em;
+    }
+    .icons-container{
+        padding-top: 2em;
+    }
+    .footer{
+        background-color: v.$coul-principale;
+    }
+    .fond-ligne-infos{
+        background-color: v.$coul-neutre-pale;
+        border-top: 2em solid v.$coul-accent;
+    }
+	.hide-on-mobile{
+		display: none !important;
+	}
+	  .show-on-mobile{
+		width: 10%;
+	}
+  }

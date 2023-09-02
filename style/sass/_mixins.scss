@@ -1,0 +1,14 @@
+
+@use "variables" as v;
+@use "placeholders";
+
+
+/* --------- pour des boutons futurs -----------*/
+
+@mixin bouton($background-clr, $txt-clr, $border-clr, $txt-size: 1.5rem){
+    @extend %button;
+    background-color: $background-clr;
+    color: $txt-clr;
+    border: solid 0.2em $border-clr;
+    font-size: $txt-size;
+}

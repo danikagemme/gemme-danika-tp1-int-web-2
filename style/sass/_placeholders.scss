@@ -1,0 +1,9 @@
+
+@use 'variables' as v;
+
+%button{
+    text-decoration: none;
+    display: inline-block;
+    padding: $btn-pad-std;
+    border-radius: $btn-border-radius;
+  }

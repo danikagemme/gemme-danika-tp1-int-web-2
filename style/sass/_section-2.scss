@@ -149,6 +149,16 @@ p {
     padding: 0em;
 }
 
+.btn-envoyer{
+    @extend .section__btn-action;
+    @extend .section__btn-action--envoyer;
+}
+
+.btn-savoir-plus{
+    @extend .section__btn-action;
+    @extend .section__btn-action--savoir-plus;
+}
+
 /* ----------- Media Queries ------------*/
 
 @media screen and (max-width: 850px) {
